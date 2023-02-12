@@ -3,9 +3,6 @@ const express = require('express');
 const router = express.Router();
 const cron = require('node-cron');
 
-const moment = require('moment')
-moment.suppressDeprecationWarnings = true;
-
 let eventArray = [];
 
 router.post('/schedule', async function(req,res){
